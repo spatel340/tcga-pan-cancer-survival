@@ -1,0 +1,17 @@
+# data
+data/raw/
+data/processed/*.gz
+
+# results (keep tables later selectively)
+results/
+
+# environments
+envs/
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
