@@ -87,4 +87,33 @@ This project includes a from-scratch PyTorch survival model to demonstrate deep 
 ---
 
 ## File structure
+.
+├── data/
+│ ├── raw/ # Do not commit raw data here
+│ └── processed/ # Processed expression tables (e.g. top 2000 genes)
+├── results/
+│ ├── tables/ # Model summaries, C-index tables
+│ └── figures/ # KM plots, UMAPs, PCA
+├── scripts/
+│ ├── 01_make_expression_subset.py
+│ ├── 02_pca_umap.py
+│ ├── 05_fetch_clinical_from_xena.py
+│ ├── 06_survival_baselines.py
+│ ├── 07_expression_survival_model.py
+│ └── 08_survival_pytorch_custom.py
+├── README.md
+├── requirements.txt
+├── .gitignore
 
+Requirements
+pandas
+numpy
+scikit-learn
+lifelines
+matplotlib
+torch
+
+
+Install with:
+
+pip install -r requirements.txt
